@@ -51,16 +51,4 @@ router.put("/:id", (req, res) => {
     }
 });
 
-/* Modificar un elemento */
-router.put("/:id", (req, res) => {
-    const id = req.params.id;
-
-    if (dao.edit(id, req.body)) {
-        res.sendStatus(202);
-    } else {
-        res.sendStatus(404);
-    }
-});
-
-
 module.exports = router;
