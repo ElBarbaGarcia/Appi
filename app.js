@@ -1,9 +1,10 @@
 const express = require("express");
 const cors = require("cors");
 const middleware = require("./utils/middleware");
-const keepaliveController = require("./controller/keepalive");
-const entryController = require("./controller/entry");
+const productosController = require("./controller/productos");
+const categoriasController = require("./controller/categorias");
 const loginController = require("./controller/login");
+const usersController = require("./controller/Users");
 
 const app = express();
 
@@ -13,9 +14,10 @@ app.use(express.json());
 app.use(middleware.consoleData);
 app.use(middleware.processToken);
 
-app.use("/keepalive", keepaliveController);
-app.use("/objeto", entryController);
+app.use("/categorias", categoriasController);
+app.use("/productos", productosController);
 app.use("/login", loginController);
+app.use("/users",usersController);
 
 app.use(middleware.unknownEndpoint);
 module.exports = app;

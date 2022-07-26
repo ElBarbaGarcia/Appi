@@ -1,0 +1,62 @@
+# 
+@name login 
+POST http://localhost:8000/login Content-Type: application/json
+
+{
+"username":"admin", "password":"123456"
+}
+
+### 
+POST http://127.0.0.1:8000/usuarios Content-Type: application/json Authorization: Bearer {{ login.response.body.token }}
+
+{ " id": 1,
+
+"nombre": "Alan",
+"apellido": "Gimelstein",
+"mail": "alan@gmail.com", " contrasenia": ""
+}
+
+### 
+POST http://127.0.0.1:8000/usuarios Content-Type: application/json
+
+{
+"id": 4, "nombre": "Flavio", "apellido": "Profe", "mail": "Flavio@ingsis.com", "contrasenia": ""
+}
+
+### 
+PUT http://127.0.0.1:8000/usuarios Content-Type: application/json
+
+{
+"id": 2, "nombre": "Flavio", "apellido": "Profe", "mail": "Flavio@ingsis.com", "contrasenia": ""
+}
+
+### 
+GET http://localhost:8000/usuarios
+
+### 
+DELETE http://localhost:8000/usuarios/2
+
+### 
+GET http://localhost:8000/usuarios/3
+
+### 
+GET http://localhost:8000/usuarios?nombre=Alan
+### 
+GET http://localhost:8000/usuarios?apellido=Gimelstein
+### 
+GET http://localhost:8000/usuarios?nombre=Gonzalo&apellido=Garcia
+
+### 
+GET http://localhost:8000/usuarios
+
+### 
+GET http://localhost:8000/usuarios?multinombres=Agustin
+
+### 
+GET http://localhost:8000/usuarios?buscar=Matias
+
+### 
+GET http://localhost:8000/usuarios?BuscadorMulti=Matias,Alan
+
+### 
+GET http://localhost:8000/usuario?multisearch=Gonzalo,Matias

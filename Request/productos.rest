@@ -1,0 +1,41 @@
+GET http://localhost:8000/producto
+
+### 
+GET http://localhost:8000/producto/1
+
+### 
+DELETE http://localhost:8000/producto/2
+
+### 
+GET http://localhost:8000/producto/1
+
+### 
+GET http://localhost:8000/producto?nombre=AMD
+
+### 
+GET http://localhost:8000/producto?modelo=MSI
+
+### 
+GET http://localhost:8000/producto?precio=28999
+
+### 
+GET http://localhost:8000/producto?descripcion=28999
+
+### 
+GET http://localhost:8000/producto?descripcion=ryzen&modelo=AMD
+
+### 
+GET http://localhost:8000/producto?multitle=AMD,GTX
+
+### 
+GET http://localhost:8000/producto?multitleModelo=procesador,5700
+
+### 
+GET http://localhost:8000/producto?search=ASUS
+
+### 
+GET http://localhost:8000/producto?multisearch=procesador,AMD
+
+### 
+POST http://localhost:8000/producto Content-Type: application/json
+

@@ -1,0 +1,29 @@
+GET http://localhost:8000/categoria
+
+### 
+GET http://localhost:8000/categoria/1
+
+### 
+DELETE http://localhost:8000/categoria/2
+
+### 
+GET http://localhost:8000/categoria/2
+
+### 
+GET http://localhost:8000/categoria?title=TarjetasGraficas 
+
+### 
+GET http://localhost:8000/categoria?title=Micro-Procesadores 
+
+### 
+GET http://localhost:8000/categoria?multitle=Micro-Procesadores,TarjetasGraficas 
+
+### 
+GET http://localhost:8000/categoria?search=Mothers 
+
+### 
+GET http://localhost:8000/categoria?multisearch=Mothers,TarjetasGraficas 
+
+###
+POST http://127.0.0.1:8000/categoria Content-Type: application/json
+
