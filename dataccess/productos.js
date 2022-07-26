@@ -34,7 +34,7 @@ let Producto = [
       descripcion: "exelente para un gamer promedio",
       modelo: "gtx 1650 4gb",
       foto: "https://www.fullh4rd.com.ar/prod/12484/video-geforce-gtx-1650-4gb-evga-sc-ultra"
-    }
+    },
     {
         id: 5,
         nombre: "MOTHER ASUS A520M-K AM4",
