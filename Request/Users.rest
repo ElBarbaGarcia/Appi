@@ -1,33 +1,32 @@
-# 
-@name login 
+# @name login 
 POST http://localhost:8000/login Content-Type: application/json
 
 {
-"username":"admin", "password":"123456"
+    "username":"admin", "password":"123456"
 }
 
 ### 
 POST http://127.0.0.1:8000/usuarios Content-Type: application/json Authorization: Bearer {{ login.response.body.token }}
 
-{ " id": 1,
-
-"nombre": "Alan",
-"apellido": "Gimelstein",
-"mail": "alan@gmail.com", " contrasenia": ""
+{ 
+    "id": 1,
+    "nombre": "Alan",
+    "apellido": "Gimelstein",
+    "mail": "alan@gmail.com", " contrasenia": ""
 }
 
 ### 
 POST http://127.0.0.1:8000/usuarios Content-Type: application/json
 
 {
-"id": 4, "nombre": "Flavio", "apellido": "Profe", "mail": "Flavio@ingsis.com", "contrasenia": ""
+    "id": 4, "nombre": "Flavio", "apellido": "Profe", "mail": "Flavio@ingsis.com", "contrasenia": ""
 }
 
 ### 
 PUT http://127.0.0.1:8000/usuarios Content-Type: application/json
 
 {
-"id": 2, "nombre": "Flavio", "apellido": "Profe", "mail": "Flavio@ingsis.com", "contrasenia": ""
+    "id": 2, "nombre": "Flavio", "apellido": "Profe", "mail": "Flavio@ingsis.com", "contrasenia": ""
 }
 
 ### 

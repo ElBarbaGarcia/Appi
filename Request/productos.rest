@@ -39,3 +39,13 @@ GET http://localhost:8000/producto?multisearch=procesador,AMD
 ### 
 POST http://localhost:8000/producto Content-Type: application/json
 
+{
+"id": null, "nombre": "AMD RX 6600 8GB DDR6", "precio": 14719, "activo": false, "descripcion": "me pones un 10?"
+}
+
+### 
+PUT http://localhost:8000/producto/#### Content-Type: application/json
+
+{
+"id": 4, "nombre": "intel i5 de 5 generacion", "precio": 14000, "activo": false, "descripcion": "me pones un 10?"
+}

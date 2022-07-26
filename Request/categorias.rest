@@ -26,4 +26,12 @@ GET http://localhost:8000/categoria?multisearch=Mothers,TarjetasGraficas
 
 ###
 POST http://127.0.0.1:8000/categoria Content-Type: application/json
+{
+    "id" :69, "title" : "tarjeta grafica"
+}
 
+### 
+PUT http://127.0.0.1:8000/categoria/2 Content-Type: application/json
+{
+    "id": 2, "title" : "Micro-Procesador"
+}
