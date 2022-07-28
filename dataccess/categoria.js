@@ -19,16 +19,8 @@ if (filter.title) {
     filtrado = filtrado.filter(e => e.title === filter.title)
 }
 
-if (filter.content) {
-    filtrado = filtrado.filter(e => e.content.includes(filter.content))
-}
-
 if (filter.multitle) {
     filtrado = filtrado.filter(e => filter.multitle.split(',').includes(e.title))
-}
-
-if (filter.search) {
-    filtrado = filtrado.filter(e => e.title.includes(filter.search) || e.content.includes(filter.search))
 }
 
 return filtrado

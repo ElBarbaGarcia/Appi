@@ -5,8 +5,6 @@ let Producto = [
       precio: 60000,
       activo: true,
       descripcion: "Producto de alto rendimiento y línea exclusiva para profesionales que ejecutan muchos programas a la vez.",
-      categoria: "Micro-Procesadores",
-      marca: "IntelCore",
       foto: "https://www.mercadolibre.com.ar/procesador-intel-core-i7-10700f-bx8070110700f-de-8-nucleos-y-48ghz-de-frecuencia/p/MLA17323104?pdp_filters=category:MLA1648#searchVariation=MLA17323104&position=1&search_layout=stack&type=product&tracking_id=8b418894-f9dd-4064-8c94-2bf63414fe42"
     },
     {
@@ -15,8 +13,6 @@ let Producto = [
       precio: 55880,
       activo: true,
       descripcion: "El procesador AMD Ryzen™ 7 5700G incluye ocho núcleos de CPU, una velocidad de reloj base de 3,8 GHz y ocho núcleos de GPU.",
-      categoria: "Micro-Procesadores",
-      marca: "AMD",
       foto: "https://mexx-img-2019.s3.amazonaws.com/procesador-cpu-ryzen_40369_1.jpeg?v252?v348?v928"
     },
     {
@@ -25,8 +21,6 @@ let Producto = [
       precio: 25685,
       activo: true,
       descripcion: "placa de video para novatos",
-      categoria: "Graficas",
-      marca: "AMD",
       foto: "https://www.fullh4rd.com.ar/prod/20604/video-radeon-rx-550-amd-2gb-ddr5-low-profile-oem"
     },
     {
@@ -35,8 +29,6 @@ let Producto = [
       precio: 15109,
       activo: true,
       descripcion: "exelente para un gamer promedio",
-      categoria: "Graficas",
-      marca: "GTX",
       foto: "https://www.fullh4rd.com.ar/prod/12484/video-geforce-gtx-1650-4gb-evga-sc-ultra"
     },
     {
@@ -45,8 +37,6 @@ let Producto = [
         precio: 18500,
         activo: true,
         descripcion: "mother de gama baja",
-        categoria: "Mothers",
-        marca: "ASUS",
         foto: "https://www.fullh4rd.com.ar/prod/17083/mother-asus-a520m-k-am4"
       },
       {
@@ -55,8 +45,6 @@ let Producto = [
         precio: 13700,
         activo: true,
         descripcion: "mother de gama baja",
-        categoria: "Mothers",
-        marca: "MSI",
         foto: "https://www.fullh4rd.com.ar/prod/19881/mother-msi-h310m-pro-vdh"
       },
   ];
@@ -70,14 +58,6 @@ let Producto = [
   
     if(filter.nombre){
       filtrado = filtrado.filter(p => p.nombre.search(filter.nombre) > -1)
-    }
-  
-    if(filter.categoria){
-      filtrado = filtrado.filter(p => p.categoria.search(filter.categoria) > -1)
-    }
-
-    if(filter.marca){
-      filtrado = filtrado.filter(p => p.marca.search(filter.marca) > -1)
     }
   
     if(filter.descripcion){
