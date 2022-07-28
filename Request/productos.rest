@@ -51,7 +51,7 @@ Content-Type: application/json
 PUT http://127.0.0.1:6969/productos
 Content-Type:application/json
 {
-"id":4,
+"id":34,
 "nombre":"VIDEO GEFORCE GTX 1650 4GB EVGA SC ULTRA",
 "precio":15109,
 "activo":true,

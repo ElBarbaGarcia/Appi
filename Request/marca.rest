@@ -1,0 +1,41 @@
+GET http://127.0.0.1:6969/marca
+
+### 
+GET http://127.0.0.1:6969/marca/1
+
+### 
+DELETE http://127.0.0.1:6969/marca/2
+
+### 
+GET http://127.0.0.1:6969/marca/3
+
+### 
+GET http://127.0.0.1:6969/marca?title=GTX 
+
+### 
+GET http://127.0.0.1:6969/marca?title=AMD 
+
+### 
+GET http://127.0.0.1:6969/categoria?multitle=ASUS,IntelCore 
+
+### 
+GET http://127.0.0.1:6969/marca?search=MSI 
+
+### 
+GET http://127.0.0.1:6969/marca?multisearch=GTX,ASUS 
+
+###
+POST http://127.0.0.1:6969/marca 
+Content-Type: application/json
+{
+    "id" :10, 
+    "title" : "Palit"
+}
+
+### 
+PUT http://127.0.0.1:6969/marca
+Content-Type: application/json
+{
+    "id": 25, 
+    "title" : "FullCollor"
+}

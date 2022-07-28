@@ -39,7 +39,7 @@ GET http://127.0.0.1:6969/Users?nombre=Gonzalo&apellido=Garcia
 GET http://127.0.0.1:6969/Users
 
 ### 
-GET http://127.0.0.1:6969/Users?multinombres=Agustin
+GET http://127.0.0.1:6969/Users?multinombres=Agustin,Alan
 
 ### 
 GET http://127.0.0.1:6969/Users?buscar=Matias
