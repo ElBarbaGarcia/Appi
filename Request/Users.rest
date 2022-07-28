@@ -1,6 +1,5 @@
 # @name login 
-POST http://127.0.0.1:6969/login 
-Content-Type: application/json
+POST http://127.0.0.1:6969/login Content-Type: application/json
 
 {
     "username":"admin", 
@@ -8,8 +7,8 @@ Content-Type: application/json
 }
 
 ### 
-POST http://127.0.0.1:6969/Users 
-Content-Type: application/json Authorization: Bearer {{ login.response.body.token }}
+POST http://127.0.0.1:6969/Users Content-Type: application/json
+Authorization: Bearer{{ login.response.body.token }}
 
 { 
     "id": 1,
@@ -46,6 +45,3 @@ GET http://127.0.0.1:6969/Users?buscar=Matias
 
 ### 
 GET http://127.0.0.1:6969/Users?BuscadorMulti=Matias,Alan
-
-### 
-GET http://127.0.0.1:6969/Users?multisearch=Alan,Agustin

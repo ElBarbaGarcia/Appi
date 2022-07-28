@@ -36,17 +36,19 @@ GET http://127.0.0.1:6969/productos?search=ASUS
 ### 
 POST http://127.0.0.1:6969/productos/6 
 Content-Type: application/json
+
 {
 "id": null, 
 "nombre": "AMD RX 6600 8GB DDR6", 
 "precio": 14719, 
 "activo": false, 
-"descripcion": "me pones un 10?"
+"descripcion": "nos pones un 10?"
 }
 
 ### 
 PUT http://127.0.0.1:6969/productos
 Content-Type:application/json
+
 {
 "id":34,
 "nombre":"VIDEO GEFORCE GTX 1650 4GB EVGA SC ULTRA",
