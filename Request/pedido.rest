@@ -1,0 +1,36 @@
+GET http://127.0.0.1:6969/Pedido
+
+### 
+GET http://127.0.0.1:6969/pedido/1
+
+### 
+DELETE http://127.0.0.1:6969/pedido/2
+
+### 
+GET http://127.0.0.1:6969/pedido/3
+
+### 
+GET http://127.0.0.1:6969/Pedido?mediopago=efectivo 
+
+### 
+GET http://127.0.0.1:6969/pedido?descripcion=procesador 
+
+### 
+GET http://127.0.0.1:6969/categoria?multitle=Procesadores,Graficas 
+
+###
+POST http://127.0.0.1:6969/categoria Content-Type: application/json
+
+{
+    "id" :1, 
+    "title" : "Graficas"
+}
+
+### 
+PUT http://127.0.0.1:6969/categoria
+
+Content-Type: application/json
+{
+    "id": 2, 
+    "title" : "Procesador"
+}
