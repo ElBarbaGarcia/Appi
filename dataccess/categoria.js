@@ -4,7 +4,7 @@ let Categoria = [{
 },
 {
     id: 2,
-    title: "Micro-Procesadores"
+    title: "Procesadores"
 },
 {
     id: 3,

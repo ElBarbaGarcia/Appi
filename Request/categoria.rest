@@ -13,10 +13,10 @@ GET http://127.0.0.1:6969/categoria/3
 GET http://127.0.0.1:6969/categoria?title=Graficas 
 
 ### 
-GET http://127.0.0.1:6969/categoria?title=Micro-Procesadores 
+GET http://127.0.0.1:6969/categoria?title=Procesadores 
 
 ### 
-GET http://127.0.0.1:6969/categoria?multitle=Micro-Procesadores,Graficas 
+GET http://127.0.0.1:6969/categoria?multitle=Procesadores,Graficas 
 
 ### 
 GET http://127.0.0.1:6969/categoria?search=Mothers 
@@ -37,5 +37,5 @@ PUT http://127.0.0.1:6969/categoria
 Content-Type: application/json
 {
     "id": 2, 
-    "title" : "Micro-Procesador"
+    "title" : "Procesador"
 }
