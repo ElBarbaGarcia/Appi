@@ -1,0 +1,41 @@
+GET http://127.0.0.1:6969/categoria
+
+### 
+GET http://127.0.0.1:6969/categoria/1
+
+### 
+DELETE http://127.0.0.1:6969/categoria/2
+
+### 
+GET http://127.0.0.1:6969/categoria/2
+
+### 
+GET http://127.0.0.1:6969/categoria?title=TarjetasGraficas 
+
+### 
+GET http://127.0.0.1:6969/categoria?title=Micro-Procesadores 
+
+### 
+GET http://127.0.0.1:6969/categoria?multitle=Micro-Procesadores,TarjetasGraficas 
+
+### 
+GET http://127.0.0.1:6969/categoria?search=Mothers 
+
+### 
+GET http://127.0.0.1:6969/categoria?multisearch=Mothers,TarjetasGraficas 
+
+###
+POST http://127.0.0.1:6969/categoria 
+Content-Type: application/json
+{
+    "id" :1, 
+    "title" : "Tarjeta Grafica"
+}
+
+### 
+PUT http://127.0.0.1:6969/categoria/2 
+Content-Type: application/json
+{
+    "id": 2, 
+    "title" : "Micro-Procesador"
+}

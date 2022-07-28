@@ -1,51 +1,61 @@
-GET http://localhost:8000/producto
+GET http://127.0.0.1:6969/producto
 
 ### 
-GET http://localhost:8000/producto/1
+GET http://127.0.0.1:6969/producto/1
 
 ### 
-DELETE http://localhost:8000/producto/2
+DELETE http://127.0.0.1:6969/producto/2
 
 ### 
-GET http://localhost:8000/producto/1
+GET http://127.0.0.1:6969/producto/1
 
 ### 
-GET http://localhost:8000/producto?nombre=AMD
+GET http://127.0.0.1:6969/producto?nombre=AMD
 
 ### 
-GET http://localhost:8000/producto?modelo=MSI
+GET http://127.0.0.1:6969/producto?categoria=MSI
 
 ### 
-GET http://localhost:8000/producto?precio=28999
+GET http://127.0.0.1:6969/producto?precio=28999
 
 ### 
-GET http://localhost:8000/producto?descripcion=28999
+GET http://127.0.0.1:6969/producto?descripcion=28999
 
 ### 
-GET http://localhost:8000/producto?descripcion=ryzen&modelo=AMD
+GET http://127.0.0.1:6969/producto?descripcion=ryzen&categoria=AMD
 
 ### 
-GET http://localhost:8000/producto?multitle=AMD,GTX
+GET http://127.0.0.1:6969/producto?multitle=AMD,GTX
 
 ### 
-GET http://localhost:8000/producto?multitleModelo=procesador,5700
+GET http://127.0.0.1:6969/producto?multitleCategoria=procesador,5700
 
 ### 
-GET http://localhost:8000/producto?search=ASUS
+GET http://127.0.0.1:6969/producto?search=ASUS
 
 ### 
-GET http://localhost:8000/producto?multisearch=procesador,AMD
+GET http://127.0.0.1:6969/producto?multisearch=procesador,AMD
 
 ### 
-POST http://localhost:8000/producto Content-Type: application/json
+POST http://127.0.0.1:6969/producto 
+Content-Type: application/json
 
 {
-"id": null, "nombre": "AMD RX 6600 8GB DDR6", "precio": 14719, "activo": false, "descripcion": "me pones un 10?"
+"id": null, 
+"nombre": "AMD RX 6600 8GB DDR6", 
+"precio": 14719, 
+"activo": false, 
+"descripcion": "me pones un 10?"
 }
 
 ### 
-PUT http://localhost:8000/producto/#### Content-Type: application/json
+PUT http://127.0.0.1:6969/producto 
+Content-Type: application/json
 
 {
-"id": 4, "nombre": "intel i5 de 5 generacion", "precio": 14000, "activo": false, "descripcion": "me pones un 10?"
+"id": 4, 
+"nombre": "VIDEO GEFORCE GTX 1650 4GB EVGA SC ULTRA", 
+"precio": 15109, 
+"activo": true, 
+"descripcion": "exelente para un gamer promedio"
 }

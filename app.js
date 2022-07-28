@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const middleware = require("./utils/middleware");
 const productosController = require("./controller/productos");
-const categoriasController = require("./controller/categorias");
+const categoriasController = require("./controller/categoria");
 const loginController = require("./controller/login");
 const usersController = require("./controller/Users");
 
@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(middleware.consoleData);
 app.use(middleware.processToken);
 
-app.use("/categorias", categoriasController);
+app.use("/categoria", categoriasController);
 app.use("/productos", productosController);
 app.use("/login", loginController);
 app.use("/users",usersController);

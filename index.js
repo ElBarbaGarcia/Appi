@@ -3,6 +3,6 @@ const app = require("./app");
 
 const server = http.createServer(app);
 
-server.listen(8000, () => {
+server.listen(6969, () => {
   console.log("server running");
 });
