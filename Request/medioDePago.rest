@@ -1,0 +1,38 @@
+### GET 
+http://localhost:6969/medioDePago/
+
+### GET 
+http://localhost:6969/medioDePago/4
+
+### GET 
+http://localhost:6969/medioDePago?title=Debito
+
+### GET 
+http://localhost:6969/medioDePago?search=it
+
+### GET
+ http://localhost:6969/medioDePago?multisearch=yp
+
+### 
+POST http://127.0.0.1:6969/medioDePago Content-Type: application/json
+
+{
+"id": 5, "title" : "Efectivo"
+}
+
+### 
+PUT http://localhost:6969/medioDePago/4 Content-Type: application/json
+
+{
+"id": 4, "title" : "Acciones"
+}
+
+### 
+POST http://127.0.0.1:6969/medioDePago Content-Type: application/json Authorization: Bearer {{ login.response.body.token }}
+
+{
+"id": 6, "title" : "Acciones"
+}
+
+### DELETE DELETE 
+http://localhost:6969/medioDePago/1
