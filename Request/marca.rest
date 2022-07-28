@@ -18,12 +18,6 @@ GET http://127.0.0.1:6969/marca?title=AMD
 ### 
 GET http://127.0.0.1:6969/marca?multitle=ASUS,IntelCore 
 
-### 
-GET http://127.0.0.1:6969/marca?search=MSI 
-
-### 
-GET http://127.0.0.1:6969/marca?multisearch=GTX,ASUS 
-
 ###
 POST http://127.0.0.1:6969/marca 
 Content-Type: application/json

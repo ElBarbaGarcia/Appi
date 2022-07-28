@@ -18,9 +18,6 @@ GET http://127.0.0.1:6969/categoria?title=Procesadores
 ### 
 GET http://127.0.0.1:6969/categoria?multitle=Procesadores,Graficas 
 
-### 
-GET http://127.0.0.1:6969/categoria?search=Mothers 
-
 ###
 POST http://127.0.0.1:6969/categoria 
 Content-Type: application/json

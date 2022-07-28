@@ -13,9 +13,6 @@ GET http://127.0.0.1:6969/productos/4
 GET http://127.0.0.1:6969/productos?nombre=AMD
 
 ### 
-GET http://127.0.0.1:6969/productos?categoria=Mother
-
-### 
 GET http://127.0.0.1:6969/productos?precio=15109
 
 ### 
@@ -26,9 +23,6 @@ GET http://127.0.0.1:6969/productos?descripcion=exelente&categoria=Graficas
 
 ### 
 GET http://127.0.0.1:6969/productos?multitle=AMD,GTX
-
-### 
-GET http://127.0.0.1:6969/productos?multitleCategoria=Procesador,5700
 
 ### 
 GET http://127.0.0.1:6969/productos?search=ASUS
