@@ -22,8 +22,8 @@ GET http://127.0.0.1:6969/categoria?multitle=Procesadores,Graficas
 GET http://127.0.0.1:6969/categoria?search=Mothers 
 
 ###
-POST http://127.0.0.1:6969/categoria 
-Content-Type: application/json
+POST http://127.0.0.1:6969/categoria Content-Type: application/json
+
 {
     "id" :1, 
     "title" : "Graficas"
@@ -31,6 +31,7 @@ Content-Type: application/json
 
 ### 
 PUT http://127.0.0.1:6969/categoria
+
 Content-Type: application/json
 {
     "id": 2, 
