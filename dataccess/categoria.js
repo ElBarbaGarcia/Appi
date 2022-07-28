@@ -31,15 +31,6 @@ if (filter.search) {
     filtrado = filtrado.filter(e => e.title.includes(filter.search) || e.content.includes(filter.search))
 }
 
-if (filter.multisearch) {
-    const palabrasABuscar = filter.multisearch.split(',');
-    filtrado = filtrado.filter(Categoria => {
-        const filtro = palabrasABuscar.filter(palabra => Categoria.title.includes(palabra) || Categoria.content.includes(palabra))
-        return filtro.length > 0
-    })
-}
-
-
 return filtrado
 };
 

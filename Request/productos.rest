@@ -34,9 +34,6 @@ GET http://127.0.0.1:6969/productos?multitleCategoria=Procesador,5700
 GET http://127.0.0.1:6969/productos?search=ASUS
 
 ### 
-GET http://127.0.0.1:6969/productos?multisearch=Procesador,AMD
-
-### 
 POST http://127.0.0.1:6969/productos/6 
 Content-Type: application/json
 {
