@@ -28,13 +28,13 @@ GET http://127.0.0.1:6969/productos?descripcion=exelente&categoria=Graficas
 GET http://127.0.0.1:6969/productos?multitle=AMD,GTX
 
 ### 
-GET http://127.0.0.1:6969/productos?multitleCategoria=Micro-Procesador,5700
+GET http://127.0.0.1:6969/productos?multitleCategoria=Procesador,5700
 
 ### 
 GET http://127.0.0.1:6969/productos?search=ASUS
 
 ### 
-GET http://127.0.0.1:6969/productos?multisearch=Micreo-Procesador,AMD
+GET http://127.0.0.1:6969/productos?multisearch=Procesador,AMD
 
 ### 
 POST http://127.0.0.1:6969/productos/6 

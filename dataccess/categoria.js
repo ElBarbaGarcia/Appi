@@ -33,8 +33,8 @@ if (filter.search) {
 
 if (filter.multisearch) {
     const palabrasABuscar = filter.multisearch.split(',');
-    filtrado = filtrado.filter(categoria => {
-        const filtro = palabrasABuscar.filter(palabra => categoria.title.includes(palabra) || categoria.content.includes(palabra))
+    filtrado = filtrado.filter(Categoria => {
+        const filtro = palabrasABuscar.filter(palabra => Categoria.title.includes(palabra) || Categoria.content.includes(palabra))
         return filtro.length > 0
     })
 }
