@@ -27,6 +27,7 @@ GET http://127.0.0.1:6969/marca?multisearch=GTX,ASUS
 ###
 POST http://127.0.0.1:6969/marca 
 Content-Type: application/json
+
 {
     "id" :10, 
     "title" : "Palit"
@@ -35,6 +36,7 @@ Content-Type: application/json
 ### 
 PUT http://127.0.0.1:6969/marca
 Content-Type: application/json
+
 {
     "id": 25, 
     "title" : "FullCollor"
