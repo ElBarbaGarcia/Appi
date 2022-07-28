@@ -22,8 +22,8 @@ let Producto = [
       nombre: "VIDEO RADEON RX 550 AMD 2GB DDR5 LOW PROFILE OEM",
       precio: 25685,
       activo: true,
-      descripcion: "tarjeta grafica para novatos",
-      categoria: "Targeta Grafica",
+      descripcion: "placa de video para novatos",
+      categoria: "Graficas",
       foto: "https://www.fullh4rd.com.ar/prod/20604/video-radeon-rx-550-amd-2gb-ddr5-low-profile-oem"
     },
     {
@@ -32,7 +32,7 @@ let Producto = [
       precio: 15109,
       activo: true,
       descripcion: "exelente para un gamer promedio",
-      categoria: "Tarjetas Graficas",
+      categoria: "Graficas",
       foto: "https://www.fullh4rd.com.ar/prod/12484/video-geforce-gtx-1650-4gb-evga-sc-ultra"
     },
     {

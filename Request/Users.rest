@@ -8,7 +8,7 @@ Content-Type: application/json
 }
 
 ### 
-POST http://127.0.0.1:6969/usuarios 
+POST http://127.0.0.1:6969/Users 
 Content-Type: application/json Authorization: Bearer {{ login.response.body.token }}
 
 { 
@@ -16,52 +16,36 @@ Content-Type: application/json Authorization: Bearer {{ login.response.body.toke
     "nombre": "Alan",
     "apellido": "Gimelstein",
     "mail": "alan@gmail.com", 
-    " contrasenia": ""
-}
-/*
-### 
-POST http://127.0.0.1:6969/usuarios 
-Content-Type: application/json
-
-{
-    "id": 4, "nombre": "Flavio", "apellido": "Profe", "mail": "Flavio@ingsis.com", "contrasenia": ""
+    "pass": ""
 }
 
 ### 
-PUT http://127.0.0.1:6969/usuarios 
-Content-Type: application/json
-
-{
-    "id": 2, "nombre": "Flavio", "apellido": "Profe", "mail": "Flavio@ingsis.com", "contrasenia": ""
-}
-*/
-### 
-GET http://127.0.0.1:6969/usuarios
+GET http://127.0.0.1:6969/Users
 
 ### 
-DELETE http://127.0.0.1:6969/usuarios/2
+DELETE http://127.0.0.1:6969/Users/2
 
 ### 
-GET http://127.0.0.1:6969/usuarios/3
+GET http://127.0.0.1:6969/Users/3
 
 ### 
-GET http://127.0.0.1:6969/usuarios?nombre=Alan
+GET http://127.0.0.1:6969/Users?nombre=Alan
 ### 
-GET http://127.0.0.1:6969/usuarios?apellido=Gimelstein
+GET http://127.0.0.1:6969/Users?apellido=Gimelstein
 ### 
-GET http://127.0.0.1:6969/usuarios?nombre=Gonzalo&apellido=Garcia
+GET http://127.0.0.1:6969/Users?nombre=Gonzalo&apellido=Garcia
 
 ### 
-GET http://127.0.0.1:6969/usuarios
+GET http://127.0.0.1:6969/Users
 
 ### 
-GET http://127.0.0.1:6969/usuarios?multinombres=Agustin
+GET http://127.0.0.1:6969/Users?multinombres=Agustin
 
 ### 
-GET http://127.0.0.1:6969/usuarios?buscar=Matias
+GET http://127.0.0.1:6969/Users?buscar=Matias
 
 ### 
-GET http://127.0.0.1:6969/usuarios?BuscadorMulti=Matias,Alan
+GET http://127.0.0.1:6969/Users?BuscadorMulti=Matias,Alan
 
 ### 
-GET http://127.0.0.1:6969/usuario?multisearch=Gonzalo,Matias
+GET http://127.0.0.1:6969/Users?multisearch=Alan,Agustin

@@ -1,45 +1,44 @@
-GET http://127.0.0.1:6969/producto
+GET http://127.0.0.1:6969/productos
 
 ### 
-GET http://127.0.0.1:6969/producto/1
+GET http://127.0.0.1:6969/productos/1
 
 ### 
-DELETE http://127.0.0.1:6969/producto/2
+DELETE http://127.0.0.1:6969/productos/2
 
 ### 
-GET http://127.0.0.1:6969/producto/1
+GET http://127.0.0.1:6969/productos/4
 
 ### 
-GET http://127.0.0.1:6969/producto?nombre=AMD
+GET http://127.0.0.1:6969/productos?nombre=AMD
 
 ### 
-GET http://127.0.0.1:6969/producto?categoria=MSI
+GET http://127.0.0.1:6969/productos?categoria=Mother
 
 ### 
-GET http://127.0.0.1:6969/producto?precio=28999
+GET http://127.0.0.1:6969/productos?precio=15109
 
 ### 
-GET http://127.0.0.1:6969/producto?descripcion=28999
+GET http://127.0.0.1:6969/productos?descripcion=gama
 
 ### 
-GET http://127.0.0.1:6969/producto?descripcion=ryzen&categoria=AMD
+GET http://127.0.0.1:6969/productos?descripcion=exelente&categoria=Graficas
 
 ### 
-GET http://127.0.0.1:6969/producto?multitle=AMD,GTX
+GET http://127.0.0.1:6969/productos?multitle=AMD,GTX
 
 ### 
-GET http://127.0.0.1:6969/producto?multitleCategoria=procesador,5700
+GET http://127.0.0.1:6969/productos?multitleCategoria=Micro-Procesador,5700
 
 ### 
-GET http://127.0.0.1:6969/producto?search=ASUS
+GET http://127.0.0.1:6969/productos?search=ASUS
 
 ### 
-GET http://127.0.0.1:6969/producto?multisearch=procesador,AMD
+GET http://127.0.0.1:6969/productos?multisearch=Micreo-Procesador,AMD
 
 ### 
-POST http://127.0.0.1:6969/producto 
+POST http://127.0.0.1:6969/productos/6 
 Content-Type: application/json
-
 {
 "id": null, 
 "nombre": "AMD RX 6600 8GB DDR6", 
@@ -49,13 +48,12 @@ Content-Type: application/json
 }
 
 ### 
-PUT http://127.0.0.1:6969/producto 
-Content-Type: application/json
-
+PUT http://127.0.0.1:6969/productos
+Content-Type:application/json
 {
-"id": 4, 
-"nombre": "VIDEO GEFORCE GTX 1650 4GB EVGA SC ULTRA", 
-"precio": 15109, 
-"activo": true, 
-"descripcion": "exelente para un gamer promedio"
+"id":4,
+"nombre":"VIDEO GEFORCE GTX 1650 4GB EVGA SC ULTRA",
+"precio":15109,
+"activo":true,
+"descripcion":"exelente para un gamer promedio"
 }

@@ -1,6 +1,6 @@
 let Categoria = [{
     id: 1,
-    title: "Tarjetas Graficas"
+    title: "Graficas"
 },
 {
     id: 2,
