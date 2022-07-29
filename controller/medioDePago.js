@@ -1,7 +1,7 @@
 const { v4: uuidv4 } = require("uuid");
 const middleware = require('../utils/middleware');
 const router = require("express").Router();
-let dao = require("../dataccess/medioDePago");
+let dao = require("../dataccess/MedioDePago");
 
 /* Obtener todo */
 router.get("/", (req, res) => {

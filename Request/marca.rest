@@ -1,25 +1,25 @@
-GET http://127.0.0.1:6969/marca
+GET http://127.0.0.1:6969/Marca
 
 ### 
-GET http://127.0.0.1:6969/marca/1
+GET http://127.0.0.1:6969/Marca/1
 
 ### 
-DELETE http://127.0.0.1:6969/marca/2
+DELETE http://127.0.0.1:6969/Marca/2
 
 ### 
-GET http://127.0.0.1:6969/marca/3
+GET http://127.0.0.1:6969/Marca/3
 
 ### 
-GET http://127.0.0.1:6969/marca?title=GTX 
+GET http://127.0.0.1:6969/Marca?title=GTX 
 
 ### 
-GET http://127.0.0.1:6969/marca?title=AMD 
+GET http://127.0.0.1:6969/Marca?title=AMD 
 
 ### 
-GET http://127.0.0.1:6969/marca?multitle=ASUS,IntelCore 
+GET http://127.0.0.1:6969/Marca?multitle=ASUS,IntelCore 
 
 ###
-POST http://127.0.0.1:6969/marca 
+POST http://127.0.0.1:6969/Marca 
 Content-Type: application/json
 
 {
@@ -28,7 +28,7 @@ Content-Type: application/json
 }
 
 ### 
-PUT http://127.0.0.1:6969/marca
+PUT http://127.0.0.1:6969/Marca
 Content-Type: application/json
 
 {

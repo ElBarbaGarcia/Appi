@@ -1,4 +1,4 @@
-let Entry = [{
+let MedioDePago = [{
     id: 1,
     title: "Debito",
 },
@@ -13,7 +13,7 @@ let Entry = [{
 ];
 
 const getAll = (filter) => {
-let filtrado = Entry;
+let filtrado = MedioDePago;
 
 if (filter.title) {
     filtrado = filtrado.filter(e => e.title === filter.title)
@@ -26,23 +26,23 @@ if (filter.multitle) {
 return filtrado
 };
 
-const getOne = (id) => { return Entry.find((registro) => registro.id == id); }
+const getOne = (id) => { return MedioDePago.find((registro) => registro.id == id); }
 
-const save = (body) => { Entry.push(body); }
+const save = (body) => { MedioDePago.push(body); }
 
 const borrar = (id) => {
-const index = Entry.findIndex((registro) => registro.id == id);
+const index = MedioDePago.findIndex((registro) => registro.id == id);
 if (index > 0) {
-    Entry.splice(index, 1);
+    MedioDePago.splice(index, 1);
     return true
 }
 return false
 }
 
 const update = (id, body) => {
-const index = Entry.findIndex((registro) => registro.id == id);
+const index = MedioDePago.findIndex((registro) => registro.id == id);
 if (index >= 0) {
-    Entry[index] = body;
+    MedioDePago[index] = body;
     return true
 }
 return false

@@ -51,15 +51,6 @@ const getTodos = (filter) => {
         filtrar = filtrar.filter(e => e.nombre.includes(filter.buscar) || e.apellido.includes(filter.buscar) || e.mail.includes(filter.buscar) || e.pass.includes(filter.buscar));
     }
 
-
-    if (filter.multisearch) {
-        const palabrasABuscar = filter.multisearch.split(',');
-        filtrado = filtrado.filter(entry => {
-            const filtro = palabrasABuscar.filter(palabra => p.nombre.includes(palabra) || p.mail.includes(palabra))
-            return filtro.length > 0
-        })
-    }
-
     return filtrar
 }
 

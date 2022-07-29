@@ -1,34 +1,34 @@
-GET http://127.0.0.1:6969/productos
+GET http://127.0.0.1:6969/Productos
 
 ### 
-GET http://127.0.0.1:6969/productos/1
+GET http://127.0.0.1:6969/Productos/1
 
 ### 
-DELETE http://127.0.0.1:6969/productos/2
+DELETE http://127.0.0.1:6969/Productos/2
 
 ### 
-GET http://127.0.0.1:6969/productos/4
+GET http://127.0.0.1:6969/Productos/4
 
 ### 
-GET http://127.0.0.1:6969/productos?nombre=AMD
+GET http://127.0.0.1:6969/Productos?nombre=AMD
 
 ### 
-GET http://127.0.0.1:6969/productos?precio=15109
+GET http://127.0.0.1:6969/Productos?precio=15109
 
 ### 
-GET http://127.0.0.1:6969/productos?descripcion=gama
+GET http://127.0.0.1:6969/Productos?descripcion=gama
 
 ### 
-GET http://127.0.0.1:6969/productos?descripcion=exelente&categoria=Graficas
+GET http://127.0.0.1:6969/Productos?descripcion=exelente&categoria=Graficas
 
 ### 
-GET http://127.0.0.1:6969/productos?multitle=AMD,GTX
+GET http://127.0.0.1:6969/Productos?multitle=AMD,GTX
 
 ### 
-GET http://127.0.0.1:6969/productos?search=ASUS
+GET http://127.0.0.1:6969/Productos?search=ASUS
 
 ### 
-POST http://127.0.0.1:6969/productos/6 
+POST http://127.0.0.1:6969/Productos/6 
 Content-Type: application/json
 
 {
@@ -40,7 +40,7 @@ Content-Type: application/json
 }
 
 ### 
-PUT http://127.0.0.1:6969/productos
+PUT http://127.0.0.1:6969/Productos
 Content-Type:application/json
 
 {
