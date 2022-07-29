@@ -34,5 +34,5 @@ POST http://127.0.0.1:6969/medioDePago Content-Type: application/json Authorizat
 "id": 6, "title" : "Acciones"
 }
 
-### DELETE DELETE 
-http://localhost:6969/medioDePago/1
+### 
+DELETE http://localhost:6969/medioDePago/1
