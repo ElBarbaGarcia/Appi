@@ -5,7 +5,7 @@ require('dotenv').config()
 
 router.post('/', (req,res)=>{
   const {body} = req
-  if(body.username == 'admin' && body.password == '123456'){
+  if(body.username == 'admin' && body.password == 'garcia'){
     //usuario correcto
     const tokenData = {
       username: body.username,
@@ -14,7 +14,7 @@ router.post('/', (req,res)=>{
     }
 
     const token = jwt.sign(tokenData,process.env.JWTSECRET,{ expiresIn: '1h' })
-    res.status(200).send({token, name: 'fulanito de tal'})
+    res.status(200).send({token, name: 'garcia'})
   }else{
     //usuario incorrecto
     return res.status(401).json({error:'credenciales incorrecto'})
