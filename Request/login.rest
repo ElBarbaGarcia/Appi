@@ -1,4 +1,6 @@
-POST http://127.0.0.1:6969/Login Content-Type: application/json
+POST http://127.0.0.1:6969/Login 
+
+Content-Type: application/json
 
 {
   "username":"admin", "password":"123456"
