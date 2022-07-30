@@ -4,6 +4,9 @@ let Producto = [
       nombre: "Procesador Intel Core i7-10700F BX8070110700F de 8 núcleos y 4.8GHz de frecuencia",
       precio: 60000,
       activo: true,
+      marca: "Intel",
+      categoria: "Procesador",
+      destacado: false,
       descripcion: "Producto de alto rendimiento y línea exclusiva para profesionales que ejecutan muchos programas a la vez.",
       foto: "https://www.mercadolibre.com.ar/procesador-intel-core-i7-10700f-bx8070110700f-de-8-nucleos-y-48ghz-de-frecuencia/p/MLA17323104?pdp_filters=category:MLA1648#searchVariation=MLA17323104&position=1&search_layout=stack&type=product&tracking_id=8b418894-f9dd-4064-8c94-2bf63414fe42"
     },
@@ -12,6 +15,9 @@ let Producto = [
       nombre: "Procesador AMD Ryzen 7 5700G",
       precio: 55880,
       activo: true,
+      marca: "AMD",
+      categoria: "Procesador",
+      destacado: false,
       descripcion: "El procesador AMD Ryzen™ 7 5700G incluye ocho núcleos de CPU, una velocidad de reloj base de 3,8 GHz y ocho núcleos de GPU.",
       foto: "https://mexx-img-2019.s3.amazonaws.com/procesador-cpu-ryzen_40369_1.jpeg?v252?v348?v928"
     },
@@ -20,6 +26,9 @@ let Producto = [
       nombre: "VIDEO RADEON RX 550 AMD 2GB DDR5 LOW PROFILE OEM",
       precio: 25685,
       activo: true,
+      marca: "AMD",
+      categoria: "Grafica",
+      destacado: true,
       descripcion: "placa de video para novatos",
       foto: "https://www.fullh4rd.com.ar/prod/20604/video-radeon-rx-550-amd-2gb-ddr5-low-profile-oem"
     },
@@ -28,25 +37,34 @@ let Producto = [
       nombre: "VIDEO GEFORCE GTX 1650 4GB EVGA SC ULTRA",
       precio: 15109,
       activo: true,
+      marca: "GTX",
+      categoria: "Grafica",
+      destacado: false,
       descripcion: "exelente para un gamer promedio",
       foto: "https://www.fullh4rd.com.ar/prod/12484/video-geforce-gtx-1650-4gb-evga-sc-ultra"
     },
     {
-        id: 5,
-        nombre: "MOTHER ASUS A520M-K AM4",
-        precio: 18500,
-        activo: true,
-        descripcion: "mother de gama baja",
-        foto: "https://www.fullh4rd.com.ar/prod/17083/mother-asus-a520m-k-am4"
-      },
-      {
-        id: 6,
-        nombre: "MOTHER MSI H310M PRO-VDH",
-        precio: 13700,
-        activo: true,
-        descripcion: "mother de gama baja",
-        foto: "https://www.fullh4rd.com.ar/prod/19881/mother-msi-h310m-pro-vdh"
-      },
+      id: 5,
+      nombre: "MOTHER ASUS A520M-K AM4",
+      precio: 18500,
+      activo: true,
+      marca: "ASUS",
+      categoria: "Mother",
+      destacado: true,
+      descripcion: "mother de gama baja",
+      foto: "https://www.fullh4rd.com.ar/prod/17083/mother-asus-a520m-k-am4"
+    },
+    {
+      id: 6,
+      nombre: "MOTHER MSI H310M PRO-VDH",
+      precio: 13700,
+      activo: true,
+      marca: "MSI",
+      categoria: "Mother",
+      destacado: false,
+      descripcion: "mother de gama baja",
+      foto: "https://www.fullh4rd.com.ar/prod/19881/mother-msi-h310m-pro-vdh"
+    },
   ];
   
   const getAll = (filter) => { 
@@ -72,6 +90,14 @@ let Producto = [
   }
   
   const getOne = (id) => { return Producto.find((registro) => registro.id == id);}
+
+  const getOrdenadoAaZ  = () => {return Producto.sort((a, b) => a.title.localeCompare(b.title)) };
+
+  const getDestacados = () => {return Producto.filter(producto => producto.destacado)};
+
+  const getMarca = (marca) => {return Producto.filter(producto => producto.marca == marca)};
+
+  const getCategoria = (categoria) => {return Producto.filter(producto => producto.categoria == categoria)};
   
   const save = (body) => { Producto.push(body);}
   
@@ -93,4 +119,4 @@ let Producto = [
     return false
   }
   
-  module.exports = { getAll, getOne, save, borrar, update};
+  module.exports = {getAll,getOrdenadoAaZ, getDestacados, getMarca, getCategoria, getOne, save, borrar, update};

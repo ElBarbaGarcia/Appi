@@ -28,6 +28,18 @@ GET http://127.0.0.1:6969/Productos?multitle=AMD,GTX
 GET http://127.0.0.1:6969/Productos?search=ASUS
 
 ### 
+GET http://127.0.0.1:6969/Productos/categoria?categoria=Mother
+
+### 
+GET http://127.0.0.1:6969/Productos/destacados
+
+### 
+GET http://127.0.0.1:6969/Productos/marca?marca=ASUS
+
+### 
+GET http://127.0.0.1:6969/Productos/az
+
+### 
 POST http://127.0.0.1:6969/Productos/6 
 Content-Type: application/json
 
