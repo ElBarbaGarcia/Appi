@@ -5,7 +5,6 @@ const productosController = require("./controller/productos");
 const categoriasController = require("./controller/categoria");
 const loginController = require("./controller/login");
 const usersController = require("./controller/Users");
-const mediodepagoController = require("./controller/medioDePago");
 const marcaController = require("./controller/marca");
 
 const app = express();
@@ -18,7 +17,6 @@ app.use(middleware.processToken);
 
 app.use("/categoria", categoriasController);
 app.use("/productos", productosController);
-app.use("/medioDePago", mediodepagoController);
 app.use("/login", loginController);
 app.use("/users",usersController);
 app.use("/marca",marcaController);
