@@ -32,11 +32,11 @@ GET http://127.0.0.1:6969/Productos/destacados
 GET http://127.0.0.1:6969/Productos/marca?marca=ASUS
 
 ### 
-POST http://127.0.0.1:6969/Productos/77
-Content-Type: application/json
+POST http://127.0.0.1:6969/Productos/1
+
+Content-Type: application/json Authorization: Bearer {{ login.response.body.token }}
 
 {
-"id": 77, 
 "nombre": "AMD RX 6600 8GB DDR6", 
 "precio": 14719, 
 "activo": true, 
@@ -46,11 +46,10 @@ Content-Type: application/json
 }
 
 ### 
-PUT http://127.0.0.1:6969/Productos
-Content-Type:application/json
+PUT http://127.0.0.1:6969/Productos/2
+Content-Type: application/json Authorization: Bearer {{ login.response.body.token }}
 
 {
-"id":34,
 "nombre":"VIDEO GEFORCE GTX 1650 4GB EVGA SC ULTRA",
 "precio":15109,
 "activo":true,
