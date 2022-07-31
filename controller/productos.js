@@ -8,7 +8,6 @@ router.get("/", (req, res) => {
   res.status(200).json(dao.getAll(req.query));
 });
 
-
 //Obtener los destacados
 router.get("/destacados", (req, res) => {
   res.status(200).json(dao.getDestacados());

@@ -117,4 +117,4 @@ const update = (id, body) => {
   return false
 }
 
-module.exports = {getAll,getOrdenadoAaZ, getDestacados, getMarca, getCategoria, getOne, save, borrar, update};
+module.exports = {getAll, getDestacados, getMarca, getCategoria, getOne, save, borrar, update};
