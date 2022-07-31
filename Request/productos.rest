@@ -4,7 +4,7 @@ GET http://127.0.0.1:6969/Productos
 GET http://127.0.0.1:6969/Productos/1
 
 ### 
-DELETE http://127.0.0.1:6969/Productos/2
+DELETE http://127.0.0.1:6969/Productos/3
 
 ### 
 GET http://127.0.0.1:6969/Productos/4
@@ -19,24 +19,30 @@ GET http://127.0.0.1:6969/Productos?precio=15109
 GET http://127.0.0.1:6969/Productos?descripcion=gama
 
 ### 
-GET http://127.0.0.1:6969/Productos?descripcion=exelente&categoria=Graficas
+GET  http://127.0.0.1:6969/Productos/categoria?categoria=Mother
 
-### 
-GET http://127.0.0.1:6969/Productos?multitle=AMD,GTX
 
 ### 
 GET http://127.0.0.1:6969/Productos?search=ASUS
 
 ### 
-POST http://127.0.0.1:6969/Productos/6 
+GET http://127.0.0.1:6969/Productos/destacados
+
+### 
+GET http://127.0.0.1:6969/Productos/marca?marca=ASUS
+
+### 
+POST http://127.0.0.1:6969/Productos/77
 Content-Type: application/json
 
 {
-"id": null, 
+"id": 77, 
 "nombre": "AMD RX 6600 8GB DDR6", 
 "precio": 14719, 
-"activo": false, 
-"descripcion": "nos pones un 10?"
+"activo": true, 
+"descripcion": "nos pones un 10?",
+"marca":"AMD",
+"categoria":"grafica"
 }
 
 ### 
@@ -48,5 +54,7 @@ Content-Type:application/json
 "nombre":"VIDEO GEFORCE GTX 1650 4GB EVGA SC ULTRA",
 "precio":15109,
 "activo":true,
-"descripcion":"exelente para un gamer promedio"
+"descripcion":"exelente para un gamer promedio",
+"categoria":"grafica",
+"marca":"GTX"
 }

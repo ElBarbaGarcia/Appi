@@ -20,12 +20,12 @@ GET http://127.0.0.1:6969/Users/3
 
 ### 
 GET http://127.0.0.1:6969/Users?nombre=Alan
+
 ### 
 GET http://127.0.0.1:6969/Users?apellido=Gimelstein
+
 ### 
 GET http://127.0.0.1:6969/Users?nombre=Gonzalo&apellido=Garcia
-
-
 
 ### 
 GET http://127.0.0.1:6969/Users?multinombres=Agustin,Alan
