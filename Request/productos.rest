@@ -4,9 +4,6 @@ GET http://127.0.0.1:6969/Productos
 GET http://127.0.0.1:6969/Productos/1
 
 ### 
-DELETE http://127.0.0.1:6969/Productos/2
-
-### 
 GET http://127.0.0.1:6969/Productos/4
 
 ### 
@@ -38,27 +35,3 @@ GET http://127.0.0.1:6969/Productos/marca?marca=ASUS
 
 ### 
 GET http://127.0.0.1:6969/Productos/az
-
-### 
-POST http://127.0.0.1:6969/Productos/6 
-Content-Type: application/json
-
-{
-"id": null, 
-"nombre": "AMD RX 6600 8GB DDR6", 
-"precio": 14719, 
-"activo": false, 
-"descripcion": "nos pones un 10?"
-}
-
-### 
-PUT http://127.0.0.1:6969/Productos
-Content-Type:application/json
-
-{
-"id":34,
-"nombre":"VIDEO GEFORCE GTX 1650 4GB EVGA SC ULTRA",
-"precio":15109,
-"activo":true,
-"descripcion":"exelente para un gamer promedio"
-}

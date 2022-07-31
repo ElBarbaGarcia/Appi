@@ -1,5 +1,6 @@
 # @name login 
-POST http://127.0.0.1:6969/Login Content-Type: application/json
+POST http://127.0.0.1:6969/Login 
+Content-Type: application/json Authorization: Bearer{{ login.response.body.token }}
 
 {
     "username":"admin", 
@@ -7,8 +8,7 @@ POST http://127.0.0.1:6969/Login Content-Type: application/json
 }
 
 ### 
-POST http://127.0.0.1:6969/Users Content-Type: application/json
-Authorization: Bearer{{ login.response.body.token }}
+POST http://127.0.0.1:6969/Users Content-Type: application/json 
 
 { 
     "id": 1,
